@@ -1,0 +1,10 @@
+# Netlify konfigurācija — statiska HTML lapa
+[build]
+  publish = "."
+  # Build command nav vajadzīga (nav build procesa)
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
